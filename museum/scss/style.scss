@@ -1,0 +1,15 @@
+// Подключаем базовые стили
+@import "base/variables";
+@import "base/reset";
+@import "base/global";
+
+// Подключаем блоки
+@import "blocks/01-header";
+@import "blocks/02-hero";
+@import "blocks/03-virtual-tour";
+@import "blocks/04-picture-explore";
+@import "blocks/05-video-journey";
+@import "blocks/06-art-gallery";
+@import "blocks/07-buy-tickets";
+@import "blocks/08-contacts";
+@import "blocks/09-footer";
