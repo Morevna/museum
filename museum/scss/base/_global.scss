@@ -1,8 +1,12 @@
 @use "variables";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: variables.$font-title;
+  font-family: variables.$font-main;
   // color: aqua;
-// //   background-color: $bg-color;
+  // background-color: #000;
 // //   color: $text-color;
 // //   line-height: 1.6;
 // //   min-height: 100vh;
@@ -13,6 +17,12 @@ h1, h2, h3, h4, h5, h6 {
 // //   color: $main-color;
 // //   margin-bottom: 1rem;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 
 // a {
 // //   color: $main-color;
