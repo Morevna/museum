@@ -1,15 +1,15 @@
 // Подключаем базовые стили
-@import "base/variables";
-@import "base/reset";
-@import "base/global";
+@use "base/variables";
+@use "base/reset";
+@use "base/global";
 
 // Подключаем блоки
-@import "blocks/01-header";
-@import "blocks/02-hero";
-@import "blocks/03-virtual-tour";
-@import "blocks/04-picture-explore";
-@import "blocks/05-video-journey";
-@import "blocks/06-art-gallery";
-@import "blocks/07-buy-tickets";
-@import "blocks/08-contacts";
-@import "blocks/09-footer";
+@use "blocks/01-header" as header01;
+@use "blocks/02-hero" as hero02;
+@use "blocks/03-virtual-tour" as virtualTour03;
+@use "blocks/04-picture-explore" as pictureExplore04;
+@use "blocks/05-video-journey" as videoJourney05;
+@use "blocks/06-art-gallery" as artGallery06;
+@use "blocks/07-buy-tickets" as buyTickets07;
+@use "blocks/08-contacts" as contacts08;
+@use "blocks/09-footer" as footer09;

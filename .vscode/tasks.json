@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile SCSS to CSS",
+      "type": "shell",
+      "command": "sass",
+      "args": [
+        "--watch",
+        "museum/scss/style.scss",
+        "museum/css/style.css"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Windows\\System32\\cmd.exe",
+          "args": ["/c"]
+        }
+      }
+    }
+  ]
+}
