@@ -1,61 +1,43 @@
 @use "variables";
+
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
+  width: 100%;
   font-family: variables.$font-main;
-  // color: aqua;
-  // background-color: #000;
-// //   color: $text-color;
-// //   line-height: 1.6;
-// //   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: variables.$font-title;
-// //   color: $main-color;
-// //   margin-bottom: 1rem;
+  color: #9D8665;
+}
+
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.section--dark {
+  background: #030303;
+  color: #FFF;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
 }
-
-
-// a {
-// //   color: $main-color;
-// //   transition: color 0.3s ease;
-
-//   &:hover,
-//   &:focus {
-//     color: lighten($main-color, 20%);
-//   }
-// }
-
-// button {
-//   cursor: pointer;
-//   background-color: $main-color;
-//   color: $bg-color;
-//   border-radius: $border-radius;
-//   padding: 0.5rem 1rem;
-//   font-family: $font-main;
-//   border: none;
-//   transition: background-color 0.3s ease;
-
-//   &:hover,
-//   &:focus {
-//     background-color: #a04d4d;
-//   }
-// }
 
 img {
   max-width: 100%;
   display: block;
-//   border-radius: 4px;
-}
-
-ul, ol {
-  padding-left: 1.5rem;
+  height: auto;
 }

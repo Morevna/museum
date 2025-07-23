@@ -1,0 +1,8 @@
+// .virtual-tour__container {
+
+// }
+.virtual-tour__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+}
