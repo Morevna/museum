@@ -24,24 +24,24 @@
             </a>
 
             <nav class="header__nav">
-                <ul class="header__nav-menu">
+                <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#virtual-tour" class="header__link">Visiting</a>
+                        <a href="#virtual-tour" class="header__nav-link">Visiting</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#picture-explore" class="header__link">Explore</a>
+                        <a href="#picture-explore" class="header__nav-link">Explore</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#video-journey" class="header__link">Video</a>
+                        <a href="#video-journey" class="header__nav-link">Video</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#art-gallery" class="header__link">Gallery</a>
+                        <a href="#art-gallery" class="header__nav-link">Gallery</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#buy-tickets" class="header__link">Tickets</a>
+                        <a href="#buy-tickets" class="header__nav-link">Tickets</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#contacts" class="header__link">Contacts</a>
+                        <a href="#contacts" class="header__nav-link">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -53,43 +53,56 @@
         <!-- HERO -->
         <section class="section hero section--dark" id="hero">
             <div class="container hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Welcome to the Louvre</h1>
-                    <p class="hero__subtitle">From the castle to the museum</p>
-                    <a href="https://www.google.com/maps/@48.8618159,2.3366818..." class="hero__button"
+                <div class="hero__right">
+                    <h1 class="hero__right__title">Welcome <br> to the louvre</h1>
+                    <p class="hero__right__subtitle">From the castle to the museum</p>
+                    <a href="https://www.google.com/maps/@48.8618159,2.3366818..." class="hero__right__button"
                         target="_blank" rel="noopener noreferrer">
                         Discover the Louvre
                     </a>
                 </div>
 
-                <div class="hero__slider slider">
+                <div class="hero__slider">
                     <div class="slider__track">
-                        <img src="assets/img/welcome-slider/1.jpg" alt="Slide 1"
-                            class="slide slide--active">
-                        <img src="assets/img/welcome-slider/2.jpg" alt="Slide 2" class="slide">
-                        <img src="assets/img/welcome-slider/3.jpg" alt="Slide 3" class="slide">
-                        <img src="assets/img/welcome-slider/4.jpg" alt="Slide 4" class="slide">
-                        <img src="assets/img/welcome-slider/5.jpg" alt="Slide 5" class="slide">
+                        <img src="assets/img/welcome-slider/1.jpg" alt="slide 1" class="slide slide--active">
+                        <img src="assets/img/welcome-slider/2.jpg" alt="slide 2" class="slide">
+                        <img src="assets/img/welcome-slider/3.jpg" alt="slide 3" class="slide">
+                        <img src="assets/img/welcome-slider/4.jpg" alt="slide 4" class="slide">
+                        <img src="assets/img/welcome-slider/5.jpg" alt="slide 5" class="slide">
                     </div>
 
-                    <div class="slider__pagination slider-pagination">
-                        <div class="slider-pagination__counter">
-                            <span class="slider-pagination__current">01</span>
-                            <span class="slider-pagination__divider">|</span>
-                            <span class="slider-pagination__total">05</span>
+                    <div class="slider__pagination">
+                        <div class="slider__pagination__counter">
+                            <span class="slider__pagination__current">01</span>
+                            <span class="slider__pagination__divider">|</span>
+                            <span class="slider__pagination__total">05</span>
                         </div>
 
-                        <div class="slider-pagination__dots">
-                            <span class="slider-pagination__dot slider-pagination__dot--active"></span>
-                            <span class="slider-pagination__dot"></span>
-                            <span class="slider-pagination__dot"></span>
-                            <span class="slider-pagination__dot"></span>
-                            <span class="slider-pagination__dot"></span>
+                        <div class="slider__pagination__dots">
+                            <div class="slider__pagination__dot slider__pagination__dot--active"></div>
+                            <div class="slider__pagination__dot"></div>
+                            <div class="slider__pagination__dot"></div>
+                            <div class="slider__pagination__dot"></div>
+                            <div class="slider__pagination__dot"></div>
                         </div>
 
-                        <div class="slider-pagination__arrows">
-                            <button class="slider-pagination__arrow slider-pagination__arrow--prev">&#10094;</button>
-                            <button class="slider-pagination__arrow slider-pagination__arrow--next">&#10095;</button>
+                        <div class="slider__pagination__arrows">
+                            <button class="slider__pagination__arrow slider__pagination__arrow--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="8" viewBox="0 0 80 8"
+                                    fill="none">
+                                    <path
+                                        d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                            <button class="slider__pagination__arrow slider__pagination__arrow--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="8" viewBox="0 0 80 8"
+                                    fill="none">
+                                    <path
+                                        d="M74.2775 1.97284e-06C76.0983 1.68661 78.0058 2.91738 80 3.69231L80 4.30769C78.0058 5.10541 76.0983 6.33618 74.2775 8L72.7601 8C73.6272 6.5641 74.4653 5.47009 75.2746 4.71795L50 4.71795L50 3.28205L75.2746 3.28205C74.4653 2.52992 73.6272 1.4359 72.7601 1.86378e-06L74.2775 1.97284e-06Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>

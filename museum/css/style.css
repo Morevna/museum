@@ -34,6 +34,10 @@ html {
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 300;
 }
 
 h1,
@@ -42,8 +46,18 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   font-family: "Forum", serif;
   color: #9D8665;
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4,
+.section--dark h5,
+.section--dark h6 {
+  color: #FFF;
 }
 
 .section {
@@ -68,37 +82,220 @@ img {
   height: auto;
 }
 
+.header {
+  max-height: 150px;
+  height: auto;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .header__container {
   display: flex;
-  justify-content: space-between;
+  gap: 490px;
   align-items: center;
+  padding-top: 40px;
 }
 
 .header__logo {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 25px;
+}
+.header__logo-title {
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .header__nav {
   max-width: 720px;
 }
-
-.header__nav-menu {
-  max-width: 720px;
+.header__nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
-
 .header__nav-item {
   padding: 1rem;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.header__nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .nav__list {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+  .burger {
+    display: flex;
+  }
+}
 .hero__container {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
   align-items: center;
+}
+
+.hero__right {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero__right .hero__right__title {
+  white-space: nowrap;
+  position: absolute;
+  top: -60px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.hero__right .hero__right__subtitle {
+  white-space: nowrap;
+  margin-top: 140px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+.hero__right .hero__right__button {
+  margin-top: 55px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 25px 40px;
+  max-width: 360px;
+  width: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+  background-color: #710707;
+}
+.hero__right .hero__right__button:hover {
+  background-color: #5a0909;
+}
+
+.hero__slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+
+.slider__track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.slider__track .slide img {
+  object-fit: cover;
+  width: 100%;
+}
+.slider__track .slide {
+  display: none;
+}
+.slider__track .slide--active {
+  display: block;
+}
+
+.slider__pagination {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 9%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  transform: translateY(50%);
+  background: #030303;
+  width: 600px;
+  height: 120px;
+}
+
+.slider__pagination__counter {
+  margin-left: 75px;
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+}
+
+.slider__pagination__dots {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.slider__pagination__dots .slider__pagination__dot {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.slider__pagination__dots .slider__pagination__dot--active {
+  width: 16px;
+  height: 16px;
+  background-color: #D2B183;
+}
+
+.slider__pagination__arrows {
+  display: flex;
+  justify-content: space-around;
+  gap: 3px;
+  position: relative;
+  left: 8%;
+}
+.slider__pagination__arrows .slider__pagination__arrow {
+  position: absolute;
+  bottom: 0%;
+  transform: translateX(0%);
+  transform: translateY(40%);
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.slider__pagination__arrows .slider__pagination__arrow:hover {
+  color: #D2B183;
 }
 
 .virtual-tour__grid {

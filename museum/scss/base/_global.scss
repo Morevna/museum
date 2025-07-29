@@ -8,6 +8,10 @@ html {
 body {
   width: 100%;
   font-family: variables.$font-main;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 300;
 }
 
 h1,
@@ -16,8 +20,18 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   font-family: variables.$font-title;
   color: #9D8665;
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4,
+.section--dark h5,
+.section--dark h6 {
+  color: #FFF;
 }
 
 .section {
