@@ -173,6 +173,7 @@ img {
 .hero__container {
   display: flex;
   width: 100%;
+  max-height: 730px;
   align-items: center;
 }
 
@@ -248,7 +249,7 @@ img {
   bottom: 0%;
   transform: translateY(50%);
   background: #030303;
-  width: 600px;
+  min-width: 600px;
   height: 120px;
 }
 
@@ -278,19 +279,13 @@ img {
 
 .slider__pagination__arrows {
   display: flex;
-  justify-content: space-around;
-  gap: 3px;
-  position: relative;
-  left: 8%;
+  gap: 2px;
+  font-size: 0;
+  max-width: 30px;
 }
 .slider__pagination__arrows .slider__pagination__arrow {
-  position: absolute;
-  bottom: 0%;
-  transform: translateX(0%);
-  transform: translateY(40%);
   color: white;
   background: transparent;
-  border: none;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -298,10 +293,55 @@ img {
   color: #D2B183;
 }
 
+.virtual-tour__title {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.virtual-tour__title::after {
+  content: "";
+  display: block;
+  width: 265%;
+  height: 3px;
+  background-color: #710707;
+  margin-top: 25px;
+  margin-bottom: 73px;
+}
+
 .virtual-tour__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px 30px;
+  gap: 75px 50px;
+}
+
+.virtual-tour__caption {
+  color: #000;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.virtual-tour__caption::after {
+  content: "";
+  display: block;
+  width: 67%;
+  height: 2px;
+  background-color: #710707;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.virtual-tour__type {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.virtual-tour__source {
+  font-size: 18px;
 }
 
 .picture-explore__container {

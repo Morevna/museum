@@ -1,8 +1,64 @@
-// .virtual-tour__container {
+// .virtual-tour {}
 
-// }
+// .virtual-tour__container {}
+
+.virtual-tour__title {
+    position: relative;
+    display: inline-block;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 265%;
+        height: 3px;
+        background-color: #710707;
+        margin-top: 25px;
+        margin-bottom: 73px;
+    }
+}
+
 .virtual-tour__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px 30px;
+    gap: 75px 50px;
+}
+
+// .virtual-tour__link {}
+
+// .virtual-tour__item {}
+
+// .virtual-tour__image {}
+
+.virtual-tour__caption {
+    color: #000;
+    font-size: 32px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 25px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 67%;
+        height: 2px;
+        background-color: #710707;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+}
+
+// .virtual-tour__underline {}
+
+.virtual-tour__type {
+margin-bottom: 10px;
+font-size: 22px;
+font-weight: 200;
+}
+
+.virtual-tour__source {
+    font-size: 18px;
 }
