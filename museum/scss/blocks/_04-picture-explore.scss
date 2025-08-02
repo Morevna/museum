@@ -8,7 +8,7 @@
 .picture-explore__content {
     flex: 1;
 
-    &__title {
+    .picture-explore__title {
         font-size: 80px;
         line-height: 90px;
         letter-spacing: 5px;
@@ -25,7 +25,7 @@
         }
     }
 
-    &__text {
+    .picture-explore__text {
         font-size: 22px;
         line-height: 38.5px;
         margin-bottom: 27px;
