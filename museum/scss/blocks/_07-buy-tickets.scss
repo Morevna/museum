@@ -1,5 +1,146 @@
+.tickets__title {
+    font-size: 80px;
+    line-height: 90px;
+    /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #710707;
+        margin-top: 25px;
+        margin-bottom: 75px;
+    }
+}
+
 .tickets__content {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    // gap: 60px;
+}
+
+.tickets__image-wrapper {
+    flex-shrink: 0;
+}
+
+
+.tickets__form {
+    gap: 264px; 
+    margin-left: 60px;
+    align-items: flex-start;
+    // max-width: 50%;
+    display: flex;
+}
+
+// Type
+.tickets__fieldset-type {
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.fieldset-type__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.fieldset-type__radio-label {
+    font-size: 22px;
+    font-weight: 300;
+    // margin-left: 20px;
+
+    .radio-label__circle {
+        margin-right: 20px;
+        transform: scale(1.4);
+    }
+}
+
+// Amount
+.tickets__fieldset-amount {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.fieldset-amount__title {
+    margin-left: 49px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fieldset-amount__amount-inputs {
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fieldset-amount__amount-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+// .fieldset-amount__amount-label {}
+.fieldset-amount__counter {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #000;
+    padding: 0 10px;
+}
+
+.fieldset-amount__counter-btn {
+    font-size: 35px;
+}
+.fieldset-amount__input {
+    margin-left: 9px;
+        width: 23px;
+}
+
+.fieldset-amount__total {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.65px;
+}
+
+.fieldset-amount__buy-btn {
+    // margin-left: -25px;
+    margin-left: -25px;
+    margin-top: 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    background: #000;
+    width: 175px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+
+.gallery-hall {
+    width: 100%;
+    height: 400px;
+    background: url(/museum/assets/img/parallax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

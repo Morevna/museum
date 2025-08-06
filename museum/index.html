@@ -409,12 +409,12 @@
                             <img src="assets/img/galery/galery9.jpg" alt="Art 2" class="art-gallery__image">
                             <img src="assets/img/galery/galery4.jpg" alt="Art 3" class="art-gallery__image">
                             <img src="assets/img/galery/galery6.jpg" alt="Art 4" class="art-gallery__image">
-                            <img src="assets/img/galery/galery8.jpg" alt="Art 5" class="art-gallery__image">
+                            <img src="assets/img/galery/galery13.jpg" alt="Art 5" class="art-gallery__image">
                             <img src="assets/img/galery/galery1.jpg" alt="Art 6" class="art-gallery__image">
                             <img src="assets/img/galery/galery8.jpg" alt="Art 7" class="art-gallery__image">
                             <img src="assets/img/galery/galery3.jpg" alt="Art 8" class="art-gallery__image">
                             <img src="assets/img/galery/galery5.jpg" alt="Art 9" class="art-gallery__image">
-                            <img src="assets/img/galery/galery6.jpg" alt="Art 10" class="art-gallery__image">
+                            <img src="assets/img/galery/galery14.jpg" alt="Art 10" class="art-gallery__image">
                             <img src="assets/img/galery/galery7.jpg" alt="Art 11" class="art-gallery__image">
                             <img src="assets/img/galery/galery10.jpg" alt="Art 12" class="art-gallery__image">
                             <img src="assets/img/galery/galery15.jpg" alt="Art 13" class="art-gallery__image">
@@ -439,60 +439,59 @@
 
                     <!-- ticket buy form -->
                     <form class="tickets__form">
-                        <fieldset class="tickets__fieldset">
-                            <legend class="tickets__fieldset-title">Ticket Type</legend>
-                            <label class="tickets__radio-label">
-                                <input type="radio" name="ticket-type" value="permanent" checked />
+                        <fieldset class="tickets__fieldset-type">
+                            <legend class="fieldset-type__title">Ticket Type</legend>
+                            <label class="fieldset-type__radio-label">
+                                <input class="radio-label__circle" type="radio" name="ticket-type" value="permanent"
+                                    checked>
                                 Permanent exhibition
                             </label>
-                            <label class="tickets__radio-label">
-                                <input type="radio" name="ticket-type" value="temporary" />
+                            <label class="fieldset-type__radio-label">
+                                <input class="radio-label__circle" type="radio" name="ticket-type" value="temporary">
                                 Temporary exhibition
                             </label>
-                            <label class="tickets__radio-label">
-                                <input type="radio" name="ticket-type" value="combined" />
+                            <label class="fieldset-type__radio-label">
+                                <input class="radio-label__circle" type="radio" name="ticket-type" value="combined">
                                 Combined Admission
                             </label>
                         </fieldset>
 
-                        <div class="tickets__form-group">
-                            <span class="tickets__label-title">Amount</span>
-                            <div class="tickets__amount-inputs">
-                                <div class="tickets__amount-group">
-                                    <label class="tickets__amount-label">Basic 18+</label>
-                                    <div class="tickets__counter">
-                                        <button type="button" class="tickets__counter-btn"
+                        <fieldset class="tickets__fieldset-amount">
+                            <legend class="fieldset-amount__title">Amount</legend>
+                            <div class="fieldset-amount__amount-inputs">
+                                <div class="fieldset-amount__amount-group">
+                                    <label class="fieldset-amount__amount-label">Basic 18+</label>
+                                    <div class="fieldset-amount__counter">
+                                        <button type="button" class="fieldset-amount__counter-btn"
                                             aria-label="Decrease">−</button>
-                                        <input type="number" class="tickets__input" min="0" value="1" />
-                                        <button type="button" class="tickets__counter-btn"
+                                        <input type="number" class="fieldset-amount__input" min="0" value="1" />
+                                        <button type="button" class="fieldset-amount__counter-btn"
                                             aria-label="Increase">+</button>
                                     </div>
                                 </div>
-                                <div class="tickets__amount-group">
-                                    <label class="tickets__amount-label">Senior 65+</label>
-                                    <div class="tickets__counter">
-                                        <button type="button" class="tickets__counter-btn"
+                                <div class="fieldset-amount__amount-group">
+                                    <label class="fieldset-amount__amount-label">Senior 65+</label>
+                                    <div class="fieldset-amount__counter">
+                                        <button type="button" class="fieldset-amount__counter-btn"
                                             aria-label="Decrease">−</button>
-                                        <input type="number" class="tickets__input" min="0" value="1" />
-                                        <button type="button" class="tickets__counter-btn"
+                                        <input type="number" class="fieldset-amount__input" min="0" value="1" />
+                                        <button type="button" class="fieldset-amount__counter-btn"
                                             aria-label="Increase">+</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <p class="tickets__total"><strong>Total €220</strong></p>
-
-                        <button type="submit" class="tickets__submit">Buy Now</button>
+                            <p class="fieldset-amount__total"><strong>Total €220</strong></p>
+                            <button type="submit" class="fieldset-amount__buy-btn">Buy Now</button>
+                        </fieldset>
                     </form>
                 </div>
 
-                <!-- picture gallery hall -->
-                <div class="tickets__gallery-hall">
-                    <img src="assets/img/parallax.jpg" alt="Gallery corridor" class="tickets__corridor-image" />
-                </div>
             </div>
         </section>
+
+
+        <div class="gallery-hall">
+        </div>
 
 
         <!-- CONTACTS -->
