@@ -2,7 +2,7 @@
 
 A feature-rich, pixel-perfect responsive website for the Louvre Museum. This project demonstrates high-fidelity UI design implementation alongside advanced vanilla JavaScript interactive systems.
 
-🔗 **[Live Demo](ССЫЛКА_НА_ТВОЙ_КЛОН_ДЕМО)**
+🔗 **[Live Demo](https://morevna.github.io/museum/)**
 
 ---
 
